@@ -1,0 +1,6 @@
+### How to run http://github.com/NginProject/ngWallet-rs/blob/master/docs/api.md[JSON-RPC] endpoint
+
+```
+$ ngWallet server --host=127.0.0.1 --port=1920
+```
+

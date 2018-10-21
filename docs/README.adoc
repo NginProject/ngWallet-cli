@@ -1,0 +1,17 @@
+= About ngWallet(Emerald) Command Line Interface (CLI)
+
+Emerald Platform is a set of tools to build and integrate other apps with Ethereum ETC blockchain.
+
+ngWallrt CLI is a tool to access Ngin from command line. It connects to an external node (_"Upstream"_) and
+allows to read information from blockchain and send new transactions. At the later case it provides functionality
+to sign transaction by provided Private Key. The tool integrates Ngin Vault with designed to generate, import and/or
+store Private Keys
+
+= Contribution
+
+- Source code: https://github.com/NginProject/ngWallet-cli
+- Issues: https://github.com/NginProject/ngWallet-cli/issues
+
+= License
+
+Apache 2.0
