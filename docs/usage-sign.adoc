@@ -18,6 +18,6 @@ $ EMERALD_GAS_COST=21 ngWallet transaction \
     0x0e7c045110b8dbf29765047380898919c5cb56f4 \
     0x1000 \
     --gas=0x2100 \
-    --upstream=127.0.0.1:8545 \
+    --upstream=127.0.0.1:52521 \
     < echo "secret passphrase"
 ```
