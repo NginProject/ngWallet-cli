@@ -1,11 +1,11 @@
 //! # Send JSON encoded HTTP requests
 
-use cmd::Error;
-use hyper::client::IntoUrl;
 use hyper::Url;
+use hyper::client::IntoUrl;
 use jsonrpc_core::Params;
 use reqwest::Client;
 use serde_json::Value;
+use cmd::Error;
 
 lazy_static! {
     static ref CLIENT: Client = Client::new().expect("Expect to create an HTTP client");
@@ -14,23 +14,27 @@ lazy_static! {
 /// RPC methods
 #[derive(Clone, Copy, Debug, Hash, PartialEq, Eq)]
 pub enum ClientMethod {
-    /// [eth_gasPrice](https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_gasprice)
+    /// [ngin_gasPrice](https://github.com/ethereum/wiki/wiki/JSON-RPC#ngin_gasprice)
     EthGasPrice,
 
-    /// [eth_estimatePrice](
-    /// https://github.com/ethereumproject/go-ethereum/wiki/JSON-RPC#eth_estimategas)
+    /// [ngin_estimatePrice](
+    /// https://github.com/ethereumproject/go-ethereum/wiki/JSON-RPC#ngin_estimategas)
     EthEstimateGas,
 
-    /// [eth_getTransactionCount](
-    /// https://github.com/ethereum/wiki/wiki/JSON-RPC#eth_gettransactioncount)
+    /// [ngin_getTransactionCount](
+    /// https://github.com/ethereum/wiki/wiki/JSON-RPC#ngin_gettransactioncount)
     EthGetTxCount,
 
-    /// [eth_sendRawTransaction](
-    /// https://github.com/paritytech/parity/wiki/JSONRPC-eth-module#eth_sendrawtransaction)
+    /// [ngin_getTransactionByHash](
+    /// https://github.com/ethereumproject/wiki/wiki/JSON-RPC#ngin_gettransactionbyhash)
+    EthGetTxByHash,
+
+    /// [ngin_sendRawTransaction](
+    /// https://github.com/paritytech/parity/wiki/JSONRPC-eth-module#ngin_sendrawtransaction)
     EthSendRawTransaction,
 
-    /// [eth_getBalance](
-    /// https://github.com/ethereumproject/go-ethereum/wiki/JSON-RPC#eth_getbalance)
+    /// [ngin_getBalance](
+    /// https://github.com/ethereumproject/go-ethereum/wiki/JSON-RPC#ngin_getbalance)
     EthGetBalance,
 }
 

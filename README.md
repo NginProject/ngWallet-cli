@@ -1,6 +1,6 @@
 ## About
 
-`ngWallet CLI(Command Line Interface)` is a tool to access Webchain Network from the command line. It connects to an external node (_"upstream"_) and allows a user or application to read information from the blockchain and to send new transactions. In the latter case it provides functionality to sign transactions by a provided Private Key. The tool integrates Webchain Vault with the intention of generation, import, and/or storing of Webchain Private Keys.
+`ngWallet CLI(Command Line Interface)` is a tool to access Ngin Network from the command line. It connects to an external node (_"upstream"_) and allows a user or application to read information from the blockchain and to send new transactions. In the latter case it provides functionality to sign transactions by a provided Private Key. The tool integrates Ngin Vault with the intention of generation, import, and/or storing of Ngin Private Keys.
 
 ## Usage
 

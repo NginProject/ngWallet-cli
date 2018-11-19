@@ -24,11 +24,11 @@ impl<'a> Serialize for MethodParams<'a> {
         S: Serializer,
     {
         match self.0 {
-            ClientMethod::EthGasPrice => serialize("eth_gasPrice", self.1, s),
-            ClientMethod::EthEstimateGas => serialize("eth_etsimateGas", self.1, s),
-            ClientMethod::EthGetTxCount => serialize("eth_getTransactionCount", self.1, s),
-            ClientMethod::EthSendRawTransaction => serialize("eth_sendRawTransaction", self.1, s),
-            ClientMethod::EthGetBalance => serialize("eth_getBalance", self.1, s),
+            ClientMethod::EthGasPrice => serialize("ngin_gasPrice", self.1, s),
+            ClientMethod::EthEstimateGas => serialize("ngin_etsimateGas", self.1, s),
+            ClientMethod::EthGetTxCount => serialize("ngin_getTransactionCount", self.1, s),
+            ClientMethod::EthSendRawTransaction => serialize("ngin_sendRawTransaction", self.1, s),
+            ClientMethod::EthGetBalance => serialize("ngin_getBalance", self.1, s),
         }
     }
 }
